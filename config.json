@@ -1,0 +1,32 @@
+{
+  "_commento": "Configura qui i tuoi filtri. Lascia 'parole_chiave' vuoto [] per ricevere TUTTI i bandi senza filtri.",
+
+  "filtro_attivo": true,
+
+  "parole_chiave": [
+    "energia",
+    "rinnovabile",
+    "efficienza energetica",
+    "imprese",
+    "startup",
+    "innovazione",
+    "digitale",
+    "cultura",
+    "turismo",
+    "agricoltura",
+    "formazione",
+    "lavoro",
+    "giovani",
+    "PNRR",
+    "sostenibilità"
+  ],
+
+  "_suggerimenti": {
+    "per_imprese": ["imprese", "PMI", "startup", "innovazione", "export", "internazionalizzazione"],
+    "per_enti_pubblici": ["comune", "ente pubblico", "pubblica amministrazione", "PA", "infrastrutture"],
+    "per_ambiente": ["energia", "rinnovabile", "efficienza energetica", "green", "sostenibilità", "clima"],
+    "per_cultura": ["cultura", "turismo", "patrimonio", "museo", "spettacolo", "arte"],
+    "per_sociale": ["sociale", "welfare", "disabilità", "anziani", "giovani", "famiglie"],
+    "per_ricerca": ["ricerca", "sviluppo", "R&S", "università", "dottorato", "PNRR"]
+  }
+}
