@@ -33,7 +33,7 @@ jobs:
           EMAIL_DESTINATARI: ${{ secrets.EMAIL_DESTINATARI }}
         run: python main.py
 
-    - name: Salva stato e dati aggiornati
+      - name: Salva stato e dati aggiornati
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
@@ -41,5 +41,4 @@ jobs:
           git add data/bandi_visti.json
           git add data/bandi_export.xlsx || true
           git diff --cached --quiet || git commit -m "chore: aggiorna dati bandi [skip ci]"
-          git push diff --cached --quiet || git commit -m "chore: aggiorna dati bandi [skip ci]"
           git push
