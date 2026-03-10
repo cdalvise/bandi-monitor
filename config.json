@@ -1,7 +1,7 @@
 {
   "_commento": "Configura qui i tuoi filtri. Lascia 'parole_chiave' vuoto [] per ricevere TUTTI i bandi senza filtri.",
 
-  "filtro_attivo": true,
+  "filtro_attivo": false,
 
   "parole_chiave": [
     "energia",
