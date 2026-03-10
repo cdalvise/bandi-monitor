@@ -31,7 +31,7 @@ jobs:
           EMAIL_DESTINATARI: ${{ secrets.EMAIL_DESTINATARI }}
         run: python main.py
 
-     - name: Salva stato e dati aggiornati
+      - name: Salva stato e dati aggiornati
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
