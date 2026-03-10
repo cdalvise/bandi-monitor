@@ -1,0 +1,43 @@
+name: Monitor Bandi Regionali
+
+on:
+  schedule:
+    - cron: '0 7 * * *'
+  workflow_dispatch:
+
+jobs:
+  monitor:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Setup Python 3.11
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Installa dipendenze
+        run: pip install -r requirements.txt
+
+      - name: Crea cartella data se non esiste
+        run: mkdir -p data
+
+      - name: Esegui monitor bandi
+        env:
+          EMAIL_MITTENTE: ${{ secrets.EMAIL_MITTENTE }}
+          EMAIL_PASSWORD: ${{ secrets.EMAIL_PASSWORD }}
+          EMAIL_DESTINATARI: ${{ secrets.EMAIL_DESTINATARI }}
+        run: python main.py
+
+      - name: Salva stato e dati aggiornati
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/bandi_visti.json
+          git add data/bandi_export.xlsx || true
+          git diff --cached --quiet || git commit -m "chore: aggiorna dati bandi [skip ci]"
+          git push
