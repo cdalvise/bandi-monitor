@@ -37,7 +37,7 @@ REGIONI = [
     },
     {
         "nome": "Piemonte",
-        "url": "https://www.regione.piemonte.it/web/temi/bandi-finanziamenti",
+        "url": "https://bandi.regione.piemonte.it/contributi-finanziamenti",
         "selettore_lista": ".views-row, article.bando, li.bando",
         "selettore_titolo": "h3, h2, .views-field-title a",
         "selettore_link": "a",
@@ -55,7 +55,7 @@ REGIONI = [
     },
     {
         "nome": "Emilia-Romagna",
-        "url": "https://bandi.regione.emilia-romagna.it/bandi-e-opportunita",
+        "url": "https://bandi.regione.emilia-romagna.it/",
         "selettore_lista": ".bando-row, article.bando, .field-items .field-item",
         "selettore_titolo": "h3 a, h2 a, .titolo a",
         "selettore_link": "a",
@@ -73,7 +73,7 @@ REGIONI = [
     },
     {
         "nome": "Lazio",
-        "url": "https://www.regione.lazio.it/bandi",
+        "url": "https://www.lazioeuropa.it/bandi/",
         "selettore_lista": ".bando-item, article, .row-bando",
         "selettore_titolo": "h3, h2, .title",
         "selettore_link": "a",
@@ -82,7 +82,7 @@ REGIONI = [
     },
     {
         "nome": "Campania",
-        "url": "https://www.regione.campania.it/regione/it/tematiche/bandi-di-gara",
+        "url": "https://www.regione.campania.it/regione/it/tematiche/bandi-e-contributi",
         "selettore_lista": ".list-group-item, article, .bando",
         "selettore_titolo": "h4, h3, a.titolo",
         "selettore_link": "a",
@@ -91,7 +91,7 @@ REGIONI = [
     },
     {
         "nome": "Sicilia",
-        "url": "https://www.regione.sicilia.it/istituzioni/servizi-informativi/bandi-gare-contratti",
+        "url": "https://www.regione.sicilia.it/istituzioni/servizi-informativi/bandi",
         "selettore_lista": ".field-item, .bando-row, article",
         "selettore_titolo": "h3, h2, .titolo",
         "selettore_link": "a",
@@ -100,7 +100,7 @@ REGIONI = [
     },
     {
         "nome": "Puglia",
-        "url": "https://www.regione.puglia.it/web/guest/bandi",
+        "url": "https://www.regione.puglia.it/web/guest/contributi-e-finanziamenti",
         "selettore_lista": ".list-item, article.bando, .portlet-body li",
         "selettore_titolo": "h3, h2, a.asset-title",
         "selettore_link": "a",
@@ -109,7 +109,7 @@ REGIONI = [
     },
     {
         "nome": "Sardegna",
-        "url": "https://www.regione.sardegna.it/argomenti/bandi/",
+        "url": "https://www.regione.sardegna.it/argomenti/bandi-e-concorsi/",
         "selettore_lista": ".bando, li.item, article",
         "selettore_titolo": "h3, h2, .titolo",
         "selettore_link": "a",
@@ -118,7 +118,7 @@ REGIONI = [
     },
     {
         "nome": "Liguria",
-        "url": "https://www.regione.liguria.it/homepage/economia-e-lavoro/bandi-e-contributi.html",
+        "url": "https://www.regione.liguria.it/home-regione/bandi-contributi-finanziamenti.html",
         "selettore_lista": ".bando-item, article, .item",
         "selettore_titolo": "h3, h2, a",
         "selettore_link": "a",
@@ -127,7 +127,7 @@ REGIONI = [
     },
     {
         "nome": "Friuli Venezia Giulia",
-        "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/economia-imprese/bandi-e-finanziamenti/",
+        "url": "https://www.regione.fvg.it/rafvg/cms/RAFVG/economia-imprese/agevolazioni-e-finanziamenti/",
         "selettore_lista": ".bando, li, article",
         "selettore_titolo": "h3, h2, a",
         "selettore_link": "a",
@@ -136,7 +136,7 @@ REGIONI = [
     },
     {
         "nome": "Trentino-Alto Adige",
-        "url": "https://www.regione.taa.it/it/bandi-e-contributi",
+        "url": "https://www.regione.taa.it/it/economia-e-lavoro/bandi-contributi",
         "selettore_lista": ".bando, article, li",
         "selettore_titolo": "h3, h2, a",
         "selettore_link": "a",
@@ -145,7 +145,7 @@ REGIONI = [
     },
     {
         "nome": "Valle d'Aosta",
-        "url": "https://www.regione.vda.it/economia/bandi_i.aspx",
+        "url": "https://www.regione.vda.it/aziende/bandi_contributi_i.aspx",
         "selettore_lista": ".bando, tr, li",
         "selettore_titolo": "h3, h2, td a, a",
         "selettore_link": "a",
@@ -181,7 +181,7 @@ REGIONI = [
     },
     {
         "nome": "Basilicata",
-        "url": "https://www.regione.basilicata.it/giunta/site/giunta/department.jsp?dep=100358",
+        "url": "https://www.basilicatanet.it/basilicata/bandi_e_gare.jsp",
         "selettore_lista": "article, li, .bando",
         "selettore_titolo": "h3, h2, a",
         "selettore_link": "a",
@@ -190,7 +190,7 @@ REGIONI = [
     },
     {
         "nome": "Calabria",
-        "url": "https://www.regione.calabria.it/website/organizzazione/dipartimenti/dpcultura/allegati/bandi.php",
+        "url": "https://www.regione.calabria.it/website/portaltemplates/view/view.cfm?14318",
         "selettore_lista": "article, li, .bando",
         "selettore_titolo": "h3, h2, a",
         "selettore_link": "a",
@@ -199,7 +199,7 @@ REGIONI = [
     },
     {
         "nome": "Umbria",
-        "url": "https://www.regione.umbria.it/economia/bandi",
+        "url": "https://www.regione.umbria.it/lavoro-economia/bandi-e-avvisi",
         "selettore_lista": "article, .bando, li",
         "selettore_titolo": "h3, h2, a",
         "selettore_link": "a",
