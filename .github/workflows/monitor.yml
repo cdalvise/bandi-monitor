@@ -33,12 +33,17 @@ jobs:
           EMAIL_DESTINATARI: ${{ secrets.EMAIL_DESTINATARI }}
         run: python main.py
 
-      - name: Salva stato e dati aggiornati
+    - name: Salva stato e dati aggiornati
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           git config --global user.name "github-actions[bot]"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
-          git pull --rebase origin main
+          git remote set-url origin https://x-access-token:${GITHUB_TOKEN}@github.com/${{ github.repository }}
           git add data/bandi_visti.json
           git add data/bandi_export.xlsx || true
+          git stash
+          git pull --rebase origin main
+          git stash pop || true
           git diff --cached --quiet || git commit -m "chore: aggiorna dati bandi [skip ci]"
           git push
