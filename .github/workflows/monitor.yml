@@ -31,7 +31,7 @@ jobs:
           EMAIL_DESTINATARI: ${{ secrets.EMAIL_DESTINATARI }}
         run: python main.py
 
-      - name: Salva stato e dati aggiornati
+     - name: Salva stato e dati aggiornati
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
@@ -41,5 +41,4 @@ jobs:
           git add data/bandi_visti.json
           git add data/bandi_export.xlsx || true
           git diff --cached --quiet || git commit -m "chore: aggiorna dati bandi [skip ci]"
-          git pull --rebase origin main
-          git push
+          git push --force origin main
